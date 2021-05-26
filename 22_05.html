@@ -56,6 +56,7 @@
                 </select><br>
                 <input type="button" name="B1" value="Boton1">
                 <button>Boton2</button>
+                <button onclick="mostrar()">JAVASCRIPT</button>
             </form><br>
             <form action="pagina.html">
                 <legend>ingreso al sistema</legend><br>
@@ -64,6 +65,24 @@
                 <input type="sumit" name="" value="Enviar">
                 <input type="reset" name="">
             </form>
+        </div>
+        <div>
+          <script type="text/javascript">
+            function mostrar(){
+              alert ("Se oprimio el Boton3");
+              var Nombre = window.prompt("Ingrese su nombre: ");
+              var edad = prompt("Ingrese su edad: ");
+              var Carrera = "Software Uniagustiniana ";
+              document.write(Carrera+"<br>");
+              document.write("Bienvenido "+Nombre);
+              if (edad < 18) {
+                document.write("<br>Usted es menor de edad!");
+              }
+              else {
+                document.write("<br>Usted es mayor de edad!");
+              }
+            }
+          </script>
         </div>
     </div>
 </body>
